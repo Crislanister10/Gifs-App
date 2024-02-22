@@ -1,0 +1,20 @@
+ 
+ <div class="d-flex-justify-content-center">
+    <img   class="card-img-top" 
+    [src]="url" 
+    [alt]="alt"
+    (load)="onLoaded()"
+    [ngStyle]="{display: hasAlone ? '': 'none'}"
+    >
+
+    <img 
+    *ngIf="!hasAlone"
+    src="assets/loader.svg" alt=""
+    width="35px"
+    height="35px"
+    class="mt-3">
+    
+
+ </div>
+ 
+
